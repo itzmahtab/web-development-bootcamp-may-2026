@@ -159,7 +159,7 @@
 }
 
 @utility gradient {
-  @apply bg-gradient-to-br from-blue-600 to-purple-600 text-transparent bg-clip-text;
+  @apply bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 text-transparent bg-clip-text;
 }
 
 @utility gradient-title {

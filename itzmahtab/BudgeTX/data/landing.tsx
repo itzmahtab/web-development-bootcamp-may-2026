@@ -28,37 +28,37 @@ export const statsData = [
 
 export const featuresData = [
   {
-    icon: <BarChart3 className="h-8 w-8 text-blue-600" />,
+    icon: <BarChart3 className="h-8 w-8 text-blue-600 dark:text-blue-400" />,
     title: "Track Every Penny",
     description:
       "Log expenses and income in seconds. See where your money goes with clean charts and reports.",
   },
   {
-    icon: <Wallet className="h-8 w-8 text-blue-600" />,
+    icon: <Wallet className="h-8 w-8 text-blue-600 dark:text-blue-400" />,
     title: "Multi-Account Dashboard",
     description:
       "Manage all your accounts — checking, savings, credit cards — from one place.",
   },
   {
-    icon: <PieChart className="h-8 w-8 text-blue-600" />,
+    icon: <PieChart className="h-8 w-8 text-blue-600 dark:text-blue-400" />,
     title: "Smart Budgeting",
     description:
       "Set monthly budgets and get gentle nudges before you overspend.",
   },
   {
-    icon: <ArrowRightLeft className="h-8 w-8 text-blue-600" />,
+    icon: <ArrowRightLeft className="h-8 w-8 text-blue-600 dark:text-blue-400" />,
     title: "Recurring Transactions",
     description:
       "Set it and forget it. BudgeTX handles your rent, subscriptions, and bills automatically.",
   },
   {
-    icon: <Bell className="h-8 w-8 text-blue-600" />,
+    icon: <Bell className="h-8 w-8 text-blue-600 dark:text-blue-400" />,
     title: "Friendly Alerts",
     description:
       "Get email reminders when you're close to your budget limit — no surprises.",
   },
   {
-    icon: <TrendingUp className="h-8 w-8 text-blue-600" />,
+    icon: <TrendingUp className="h-8 w-8 text-blue-600 dark:text-blue-400" />,
     title: "Monthly Reports",
     description:
       "A simple breakdown of your month — income, expenses, and where you can improve.",
@@ -67,19 +67,19 @@ export const featuresData = [
 
 export const howItWorksData = [
   {
-    icon: <Wallet className="h-8 w-8 text-blue-600" />,
+    icon: <Wallet className="h-8 w-8 text-blue-600 dark:text-blue-400" />,
     title: "1. Create an Account",
     description:
       "Sign up in under a minute. No credit card needed — just your name and email.",
   },
   {
-    icon: <BarChart3 className="h-8 w-8 text-blue-600" />,
+    icon: <BarChart3 className="h-8 w-8 text-blue-600 dark:text-blue-400" />,
     title: "2. Add Your First Transaction",
     description:
       "Log an expense or income. Categorize it, pick an account, and you're off.",
   },
   {
-    icon: <PieChart className="h-8 w-8 text-blue-600" />,
+    icon: <PieChart className="h-8 w-8 text-blue-600 dark:text-blue-400" />,
     title: "3. Watch Your Progress",
     description:
       "See your spending habits take shape. Adjust budgets, set goals, stay on track.",

@@ -13,15 +13,15 @@ export default function HomePage() {
     <div className="mt-20">
       <HeroSection />
 
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {statsData.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">
+                <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
                   {stat.value}
                 </div>
-                <div className="text-gray-600">{stat.label}</div>
+                <div className="text-muted-foreground">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -40,7 +40,7 @@ export default function HomePage() {
                 <CardContent className="space-y-4 pt-4">
                   {feature.icon}
                   <h3 className="text-xl font-semibold">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  <p className="text-muted-foreground">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -48,7 +48,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-4">How it works</Badge>
@@ -57,11 +57,11 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {howItWorksData.map((step, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
                   {step.icon}
                 </div>
                 <h3 className="text-xl font-semibold mb-4">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
+                <p className="text-muted-foreground">{step.description}</p>
               </div>
             ))}
           </div>
@@ -88,10 +88,10 @@ export default function HomePage() {
                     </div>
                     <div className="ml-4">
                       <div className="font-semibold">{t.name}</div>
-                      <div className="text-sm text-gray-600">{t.role}</div>
+                      <div className="text-sm text-muted-foreground">{t.role}</div>
                     </div>
                   </div>
-                  <p className="text-gray-600">&ldquo;{t.quote}&rdquo;</p>
+                  <p className="text-muted-foreground">&ldquo;{t.quote}&rdquo;</p>
                 </CardContent>
               </Card>
             ))}
@@ -99,7 +99,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 bg-blue-600">
+      <section className="py-20 bg-blue-600 dark:bg-blue-900">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Ready to give it a try?
@@ -113,7 +113,7 @@ export default function HomePage() {
                 <Link href="/dashboard">
                   <Button
                     size="lg"
-                    className="bg-white text-blue-600 hover:bg-blue-50"
+                    className="bg-white text-blue-600 hover:bg-blue-50 dark:bg-blue-600 dark:text-white dark:hover:bg-blue-700"
                   >
                     Get Started Free
                   </Button>
