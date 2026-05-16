@@ -6,11 +6,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from './ui/button'
 import { LayoutDashboard, Menu, PenBox, X } from 'lucide-react'
+import { ModeToggle } from './mode-toggle'
+
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className='fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-200'>
+    <div className='fixed top-0 w-full bg-background/80 backdrop-blur-md z-50 border-b border-border'>
       <nav className='container mx-auto px-4 h-16 flex items-center justify-between'>
         <Link href='/' className='flex-shrink-0'>
           <Image src="/logo.svg" alt="BudgeTX" width={100} height={40} />
@@ -39,6 +41,7 @@ const Header = () => {
                 Add Transaction
               </Button>
             </Link>
+            <ModeToggle />
             <UserButton />
           </Show>
         </div>
@@ -52,7 +55,7 @@ const Header = () => {
       </nav>
 
       {mobileMenuOpen && (
-        <div className='md:hidden border-t border-gray-200 px-4 py-4 space-y-3 bg-white'>
+        <div className='md:hidden border-t border-border px-4 py-4 space-y-3 bg-background'>
           <Show when="signed-out">
             <div className='flex flex-col gap-2'>
               <SignInButton mode="modal" forceRedirectUrl="/dashboard">
@@ -76,7 +79,8 @@ const Header = () => {
                 Add Transaction
               </Button>
             </Link>
-            <div className='pt-2'>
+            <div className='pt-2 flex items-center gap-4'>
+              <ModeToggle />
               <UserButton />
             </div>
           </Show>

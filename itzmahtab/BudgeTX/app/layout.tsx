@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
 
+import { ThemeProvider } from "@/components/theme-provider";
+
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "BudgeTX",
@@ -18,10 +20,17 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en" className={inter.className}>
+      <html lang="en" suppressHydrationWarning className={inter.className}>
         <body className="min-h-full flex flex-col bg-background text-foreground antialiased">
-          {children}
-          <Toaster richColors />
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+            <Toaster richColors />
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>
