@@ -4,13 +4,13 @@ A clean and straightforward personal finance tracker that helps you manage expen
 
 ## Features
 
-- **Track Expenses & Income** — Log transactions in seconds with categories and accounts
-- **Multi-Account Dashboard** — Manage checking, savings, and credit cards from one place
-- **Smart Budgeting** — Set monthly budgets and get alerts before you overspend
-- **Recurring Transactions** — Automate rent, subscriptions, and bills
-- **Monthly Reports** — See where your money went with a simple monthly breakdown
-- **Email Alerts** — Get notified when you're close to your budget limit
-- **Beautiful Landing Page** — Clean, modern UI built with shadcn components
+- Track Expenses & Income — Log transactions in seconds with categories and accounts
+- Multi-Account Dashboard — Manage checking, savings, and credit cards from one place
+- Smart Budgeting — Set monthly budgets and get alerts before you overspend
+- Recurring Transactions — Automate rent, subscriptions, and bills
+- Monthly Reports — See where your money went with a simple monthly breakdown
+- Email Alerts — Get notified when you're close to your budget limit
+- Beautiful Landing Page — Clean, modern UI built with shadcn components
 
 ## Tech Stack
 
@@ -82,11 +82,11 @@ BudgeTX/
 
 ## How It Works
 
-1. **Sign up** — Create an account via Clerk (no credit card needed)
-2. **Add an account** — Create a checking or savings account
-3. **Log transactions** — Record income and expenses with categories
-4. **Set a budget** — Define a monthly spending limit
-5. **Track progress** — The dashboard shows your spending vs budget in real time
+1. Sign up — Create an account via Clerk (no credit card needed)
+2. Add an account — Create a checking or savings account
+3. Log transactions — Record income and expenses with categories
+4. Set a budget — Define a monthly spending limit
+5. Track progress — The dashboard shows your spending vs budget in real time
 
 When you exceed 80% of your budget, BudgeTX sends you an email alert automatically.
 
