@@ -2,6 +2,10 @@
 
 A clean and straightforward personal finance tracker that helps you manage expenses, set budgets, and stay on top of your money — without the noise.
 
+## Video Demo
+
+[![BudgeTX Demo](https://img.youtube.com/vi/sTjnNV12kgw/0.jpg)](https://youtu.be/sTjnNV12kgw?si=UX91tcchYdVYu-bN)
+
 ## Features
 
 - Track Expenses & Income — Log transactions in seconds with categories and accounts
